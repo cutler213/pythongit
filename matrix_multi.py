@@ -36,3 +36,6 @@ for i in range(p):
     for j in range(q):
         print(format(re[i][j],"<3"),end=" ")
     print()
+
+
+print("hi")
