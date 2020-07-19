@@ -38,4 +38,3 @@ for i in range(p):
     print()
 
 
-print("hi")
