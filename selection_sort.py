@@ -4,22 +4,18 @@ def sort(nums):
         for j in range(i,len(nums)):
 
             if nums[j]<nums[minpos]:
-                minpos=j
-        temp=nums[i]
-        nums[i]=nums[minpos]
-        nums[minpos]=temp
+                nums[j],nums[minpos]=nums[minpos],nums[j]
+
 
 ###############################
 def sortmax(nums):
-    for i in range(len(nums)-1,0,-1):
+    for i in range(len(nums)-1,-1,-1):
         maxpos=i
-        for j in range(i):
+        for j in range(i,-1,-1):
 
-            if nums[j]>nums[maxpos]:
-                maxpos=j
-        temp=nums[i]
-        nums[i]=nums[maxpos]
-        nums[maxpos]=temp
+            if nums[j]<nums[maxpos]:
+                nums[j], nums[maxpos] = nums[maxpos], nums[j]
+
 
 nums=[5,3,8,6,7,2]
 
